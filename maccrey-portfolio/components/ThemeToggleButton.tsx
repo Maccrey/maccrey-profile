@@ -11,6 +11,14 @@ export function ThemeToggleButton() {
     setMounted(true);
   }, []);
 
+  // Debug logging
+  useEffect(() => {
+    if (mounted) {
+      console.log('Theme state:', { theme, resolvedTheme });
+      console.log('HTML class:', document.documentElement.className);
+    }
+  }, [theme, resolvedTheme, mounted]);
+
   if (!mounted) {
     return (
       <div className="relative inline-block w-14 h-7 bg-gray-300 rounded-full">
@@ -21,9 +29,15 @@ export function ThemeToggleButton() {
 
   const isDark = resolvedTheme === 'dark';
 
+  const handleToggle = () => {
+    const newTheme = isDark ? 'light' : 'dark';
+    console.log('Switching to:', newTheme);
+    setTheme(newTheme);
+  };
+
   return (
     <button
-      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      onClick={handleToggle}
       className={`relative inline-flex items-center h-7 rounded-full w-14 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
         isDark ? 'bg-blue-600' : 'bg-gray-300'
       }`}
