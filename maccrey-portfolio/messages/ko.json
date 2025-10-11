@@ -1,0 +1,26 @@
+{
+  "HomePage": {
+    "name": "임석훈",
+    "alias": "[Maccrey]",
+    "title": "Fullstack Developer | n8n | Flutter",
+    "slogan": "“세상에 존재하지 않는 서비스는 내가 만든다.”",
+    "viewProjects": "프로젝트 보기",
+    "readBlog": "블로그 읽기"
+  },
+  "Header": {
+    "home": "홈",
+    "about": "소개",
+    "projects": "프로젝트",
+    "blog": "블로그",
+    "contact": "연락처"
+  },
+  "AboutPage": {
+    "title": "소개",
+    "storyTitle": "나의 이야기",
+    "storyContent": "50세에 새로운 도전을 시작한 늦깎이 개발자입니다. 호기심과 만드는 것에 대한 열정 하나로 시작해, 이제는 풀스택 개발자로 성장하고 있습니다. Flutter로 앱을 만들고, Python과 n8n으로 비효율을 자동화하며, Next.js로 웹의 가능성을 탐험합니다. 나이는 숫자에 불과하다는 것을 코드로 증명하고 있습니다.",
+    "philosophyTitle": "개발 철학",
+    "philosophyContent": "“나는 효율적인 자동화와 사용자 경험 사이의 균형을 찾는 개발자다.”",
+    "techStackTitle": "기술 스택",
+    "downloadResume": "이력서 다운로드"
+  }
+}

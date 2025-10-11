@@ -1,0 +1,26 @@
+{
+  "HomePage": {
+    "name": "Seok-hoon Lim",
+    "alias": "[Maccrey]",
+    "title": "Fullstack Developer | n8n | Flutter",
+    "slogan": "“If a service doesn't exist in the world, I'll create it.”",
+    "viewProjects": "View Projects",
+    "readBlog": "Read Blog"
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "title": "About Me",
+    "storyTitle": "My Story",
+    "storyContent": "As a late-blooming developer who started a new challenge at 50, I began with curiosity and a passion for creation, and now I am growing as a full-stack developer. I create apps with Flutter, automate inefficiencies with Python and n8n, and explore the possibilities of the web with Next.js. I am proving that age is just a number through code.",
+    "philosophyTitle": "Philosophy",
+    "philosophyContent": "“I am a developer who finds the balance between efficient automation and user experience.”",
+    "techStackTitle": "Tech Stack",
+    "downloadResume": "Download Resume"
+  }
+}
