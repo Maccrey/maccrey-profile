@@ -1,0 +1,48 @@
+# Dependencies
+maccrey-portfolio/node_modules
+maccrey-portfolio/npm-debug.log*
+maccrey-portfolio/yarn-debug.log*
+maccrey-portfolio/yarn-error.log*
+maccrey-portfolio/pnpm-debug.log*
+
+# Build output
+maccrey-portfolio/.next
+maccrey-portfolio/out
+maccrey-portfolio/dist
+maccrey-portfolio/build
+
+# Testing
+maccrey-portfolio/coverage
+
+# Environment files
+maccrey-portfolio/.env*.local
+maccrey-portfolio/.env
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+tasklist.md
+prd.md
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Claude
+.claude
