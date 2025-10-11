@@ -4,10 +4,12 @@ import { useState } from 'react';
 import { projects as allProjects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 const categories = ['All', 'Flutter', 'n8n', 'Backend', 'etc'];
 
 export default function ProjectsPage() {
+  const t = useTranslations('ProjectsPage');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredProjects =
@@ -17,7 +19,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="container mx-auto px-4 py-24 sm:py-32">
-      <h1 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h1>
+      <h1 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">{t('title')}</h1>
       <div className="flex justify-center flex-wrap gap-4 mb-8">
         {categories.map((category) => (
           <button
@@ -29,7 +31,7 @@ export default function ProjectsPage() {
                 : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
             }`}
           >
-            {category}
+            {category === 'All' ? t('all') : category}
           </button>
         ))}
       </div>

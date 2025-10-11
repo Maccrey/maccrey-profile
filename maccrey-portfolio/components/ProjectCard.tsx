@@ -2,8 +2,11 @@
 
 import type { Project } from '@/types/project';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const t = useTranslations('ProjectsPage');
+
   return (
     <motion.div
       layout
@@ -26,16 +29,16 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-gray-900/90 dark:bg-black/80 p-6 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-        <p className="mb-4">{project.description}</p>
+        <p className="mb-4">{t(`${project.descriptionKey}.description`)}</p>
         <div className="flex gap-4">
           {project.githubLink && (
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-              GitHub
+              {t('github')}
             </a>
           )}
           {project.demoLink && (
             <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-              Demo
+              {t('demo')}
             </a>
           )}
         </div>

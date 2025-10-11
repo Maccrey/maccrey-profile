@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イム・ソクフン [Maccrey] - 履歴書</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: #fff;
+        }
+
+        @media print {
+            body {
+                padding: 10mm;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #4b5563;
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            font-size: 16px;
+            font-style: italic;
+            color: #6b7280;
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #93c5fd;
+            padding-bottom: 8px;
+        }
+
+        .subsection-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .experience-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience-list li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .experience-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .strength-card {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .strength-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .quote {
+            font-size: 16px;
+            font-style: italic;
+            color: #4b5563;
+            border-left: 4px solid #2563eb;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .commitment-box {
+            background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .print-button:hover {
+            background: #1e40af;
+        }
+
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">PDFで保存</button>
+
+    <div class="header">
+        <div class="name">イム・ソクフン [Maccrey]</div>
+        <div class="title">Fullstack Developer | n8n | Flutter</div>
+        <div class="slogan">「世の中に存在しないサービスは私が作る。」</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">私のストーリー</div>
+        <div class="content">
+            50歳で新しい挑戦を始めた遅咲きの開発者です。好奇心と作ることへの情熱だけで始め、
+            今はフルスタック開発者として成長しています。Flutterでアプリを作り、PythonとN8Nで非効率を自動化し、
+            Next.jsでウェブの可能性を探求しています。年齢は単なる数字に過ぎないことをコードで証明しています。
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">ビジネスから開発へ：特別な旅</div>
+        <div class="highlight-box">
+            <div class="content">
+                20年以上ビジネスの現場で培った経験が、今の開発者キャリアを作りました。
+            </div>
+
+            <div class="subsection-title">主なキャリアハイライト</div>
+            <ul class="experience-list">
+                <li><strong>貿易・流通：</strong>グローバルビジネスの複雑性を理解し、効率的なプロセスを構築</li>
+                <li><strong>百貨店・免税店出店：</strong>リテール市場のトレンド分析と顧客体験設計</li>
+                <li><strong>海外銀行業務：</strong>国際金融システムと規制環境に関する実務経験</li>
+                <li><strong>暗号資産ビジネス設計：</strong>ブロックチェーン技術とデジタル資産エコシステムの構築</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">50歳、開発者への転身</div>
+        <div class="content">
+            ビジネスの現場で直面した非効率と限界を直接解決したいと思いました。Flutterから始まり、
+            プログラミングの世界に入門し、今はPython、Next.js、N8Nなど様々な技術スタックで実際のサービスを開発しています。
+            年齢が障壁ではなく、むしろ強みになり得ることを証明しています。
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">ビジネス経験が生んだ開発者の強み</div>
+        <div class="strengths-grid">
+            <div class="strength-card">
+                <div class="strength-icon">💼</div>
+                <strong>ビジネス理解力</strong><br>
+                技術的実装を超えた実際のビジネス価値を創出するソリューション設計
+            </div>
+            <div class="strength-card">
+                <div class="strength-icon">🎯</div>
+                <strong>問題解決能力</strong><br>
+                20年間の現場経験で鍛えられた実用的思考方式
+            </div>
+            <div class="strength-card">
+                <div class="strength-icon">🌍</div>
+                <strong>グローバル視点</strong><br>
+                国際貿易と金融経験を通じた多文化的視点
+            </div>
+            <div class="strength-card">
+                <div class="strength-icon">🔥</div>
+                <strong>粘り強さと情熱</strong><br>
+                50歳で新しい分野に挑戦する挑戦精神と学習意欲
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">開発哲学</div>
+        <div class="quote">
+            「世の中に存在しないサービスは私が作る。ビジネス経験と技術力を組み合わせて、
+            ユーザーに真の価値を届けるサービスを作ることが私の目標です。」
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">私の決意</div>
+        <div class="commitment-box">
+            <div class="content">
+                何事も最善を尽くして最後まで完遂します。新しい技術を学ぶことを恐れず、
+                失敗を成長の機会と捉えます。単にコードを書く開発者ではなく、ビジネス問題を解決し、
+                新しい価値を創出する開発者になるために絶え間なく努力しています。
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">技術スタック</div>
+        <div class="tech-stack">
+            <span class="tech-badge">Dart</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">Supabase</span>
+            <span class="tech-badge">Cloudflare</span>
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">n8n</span>
+            <span class="tech-badge">Flutter</span>
+        </div>
+    </div>
+
+    <script>
+        // ページロード時に印刷ダイアログを自動実行（オプション）
+        // window.addEventListener('load', function() {
+        //     setTimeout(function() {
+        //         window.print();
+        //     }, 500);
+        // });
+    </script>
+</body>
+</html>

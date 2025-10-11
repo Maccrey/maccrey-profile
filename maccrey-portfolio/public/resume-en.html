@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seok-hoon Lim [Maccrey] - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: #fff;
+        }
+
+        @media print {
+            body {
+                padding: 10mm;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #4b5563;
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            font-size: 16px;
+            font-style: italic;
+            color: #6b7280;
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #93c5fd;
+            padding-bottom: 8px;
+        }
+
+        .subsection-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .experience-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience-list li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .experience-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .strength-card {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .strength-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .quote {
+            font-size: 16px;
+            font-style: italic;
+            color: #4b5563;
+            border-left: 4px solid #2563eb;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .commitment-box {
+            background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .print-button:hover {
+            background: #1e40af;
+        }
+
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">Save as PDF</button>
+
+    <div class="header">
+        <div class="name">Seok-hoon Lim [Maccrey]</div>
+        <div class="title">Fullstack Developer | n8n | Flutter</div>
+        <div class="slogan">"If a service doesn't exist in the world, I'll create it."</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">My Story</div>
+        <div class="content">
+            As a late-blooming developer who started a new challenge at 50, I began with curiosity and a passion for creation,
+            and now I am growing as a full-stack developer. I create apps with Flutter, automate inefficiencies with Python and n8n,
+            and explore the possibilities of the web with Next.js. I am proving that age is just a number through code.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">From Business to Development: A Unique Journey</div>
+        <div class="highlight-box">
+            <div class="content">
+                Over 20 years of business experience has shaped my developer career.
+            </div>
+
+            <div class="subsection-title">Career Highlights</div>
+            <ul class="experience-list">
+                <li><strong>International Trade & Distribution:</strong> Understanding global business complexity and building efficient processes</li>
+                <li><strong>Department Store & Duty-Free Shop Operations:</strong> Retail market trend analysis and customer experience design</li>
+                <li><strong>International Banking Operations:</strong> Hands-on experience with global financial systems and regulatory environments</li>
+                <li><strong>Cryptocurrency Business Design:</strong> Building blockchain technology and digital asset ecosystems</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">At 50, Transforming into a Developer</div>
+        <div class="content">
+            I wanted to directly solve the inefficiencies and limitations I encountered in the business field.
+            Starting with Flutter, I entered the world of programming, and now I'm developing real services with various tech stacks
+            including Python, Next.js, and n8n. I'm proving that age is not a barrier but rather a strength.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Developer Strengths Built on Business Experience</div>
+        <div class="strengths-grid">
+            <div class="strength-card">
+                <div class="strength-icon">💼</div>
+                <strong>Business Acumen</strong><br>
+                Designing solutions that create real business value beyond technical implementation
+            </div>
+            <div class="strength-card">
+                <div class="strength-icon">🎯</div>
+                <strong>Problem-Solving Skills</strong><br>
+                Practical thinking honed by 20 years of field experience
+            </div>
+            <div class="strength-card">
+                <div class="strength-icon">🌍</div>
+                <strong>Global Perspective</strong><br>
+                Multicultural viewpoint through international trade and finance experience
+            </div>
+            <div class="strength-card">
+                <div class="strength-icon">🔥</div>
+                <strong>Persistence & Passion</strong><br>
+                The spirit of challenge and willingness to learn, taking on a new field at 50
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Development Philosophy</div>
+        <div class="quote">
+            "If a service doesn't exist in the world, I'll create it. My goal is to create services that deliver true value
+            to users by combining business experience with technical skills."
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">My Commitment</div>
+        <div class="commitment-box">
+            <div class="content">
+                I always do my best to see things through to the end. I'm not afraid to learn new technologies and view failures
+                as opportunities for growth. I'm constantly striving to become not just a developer who writes code, but a developer
+                who solves business problems and creates new value.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Tech Stack</div>
+        <div class="tech-stack">
+            <span class="tech-badge">Dart</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">Supabase</span>
+            <span class="tech-badge">Cloudflare</span>
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">n8n</span>
+            <span class="tech-badge">Flutter</span>
+        </div>
+    </div>
+
+    <script>
+        // Auto-trigger print dialog on page load (optional)
+        // window.addEventListener('load', function() {
+        //     setTimeout(function() {
+        //         window.print();
+        //     }, 500);
+        // });
+    </script>
+</body>
+</html>

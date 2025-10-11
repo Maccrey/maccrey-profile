@@ -14,12 +14,48 @@
     "blog": "Blog",
     "contact": "Contact"
   },
+  "BlogPage": {
+    "title": "Latest Blog Posts",
+    "noPosts": "Could not fetch blog posts. Please try again later.",
+    "readMore": "Read More"
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "all": "All",
+    "github": "GitHub",
+    "demo": "Demo",
+    "studyduck": {
+      "description": "AI-based study management app"
+    },
+    "autoflow": {
+      "description": "Automation workflow system (Coming soon)"
+    },
+    "portfolio": {
+      "description": "Personal developer portfolio website"
+    }
+  },
   "AboutPage": {
     "title": "About Me",
     "storyTitle": "My Story",
     "storyContent": "As a late-blooming developer who started a new challenge at 50, I began with curiosity and a passion for creation, and now I am growing as a full-stack developer. I create apps with Flutter, automate inefficiencies with Python and n8n, and explore the possibilities of the web with Next.js. I am proving that age is just a number through code.",
-    "philosophyTitle": "Philosophy",
-    "philosophyContent": "“I am a developer who finds the balance between efficient automation and user experience.”",
+    "journeyTitle": "From Business to Development: A Unique Journey",
+    "journeyIntro": "Over 20 years of business experience has shaped my developer career.",
+    "experienceTitle": "Career Highlights",
+    "tradingExperience": "International Trade & Distribution: Understanding global business complexity and building efficient processes",
+    "retailExperience": "Department Store & Duty-Free Shop Operations: Retail market trend analysis and customer experience design",
+    "bankingExperience": "International Banking Operations: Hands-on experience with global financial systems and regulatory environments",
+    "cryptoExperience": "Cryptocurrency Business Design: Building blockchain technology and digital asset ecosystems",
+    "transformationTitle": "At 50, Transforming into a Developer",
+    "transformationContent": "I wanted to directly solve the inefficiencies and limitations I encountered in the business field. Starting with Flutter, I entered the world of programming, and now I'm developing real services with various tech stacks including Python, Next.js, and n8n. I'm proving that age is not a barrier but rather a strength.",
+    "strengthsTitle": "Developer Strengths Built on Business Experience",
+    "strengthBusiness": "Business Acumen: Designing solutions that create real business value beyond technical implementation",
+    "strengthProblem": "Problem-Solving Skills: Practical thinking honed by 20 years of field experience",
+    "strengthGlobal": "Global Perspective: Multicultural viewpoint through international trade and finance experience",
+    "strengthPersistence": "Persistence & Passion: The spirit of challenge and willingness to learn, taking on a new field at 50",
+    "philosophyTitle": "Development Philosophy",
+    "philosophyContent": "If a service doesn't exist in the world, I'll create it. My goal is to create services that deliver true value to users by combining business experience with technical skills.",
+    "commitmentTitle": "My Commitment",
+    "commitmentContent": "I always do my best to see things through to the end. I'm not afraid to learn new technologies and view failures as opportunities for growth. I'm constantly striving to become not just a developer who writes code, but a developer who solves business problems and creates new value.",
     "techStackTitle": "Tech Stack",
     "downloadResume": "Download Resume"
   }

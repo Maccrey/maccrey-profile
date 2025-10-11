@@ -4,20 +4,20 @@ export const projects: Project[] = [
   {
     name: 'StudyDuck',
     techStack: ['Flutter', 'Supabase'],
-    description: 'AI 기반 학습 관리 앱',
-    githubLink: 'https://github.com/Maccrey/studycafeforce',
+    descriptionKey: 'studyduck',
+    githubLink: 'https://github.com/Hummingbird-Team-Project/hummingbird-app',
     category: 'Flutter',
   },
   {
     name: 'AutoFlow',
     techStack: ['n8n', 'Python'],
-    description: '자동화 워크플로우 시스템 (추가 예정)',
+    descriptionKey: 'autoflow',
     category: 'n8n',
   },
   {
     name: 'Portfolio Site',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    description: '개인 개발자 포트폴리오 웹사이트',
+    descriptionKey: 'portfolio',
     githubLink: 'https://github.com/Maccrey/maccrey-profile',
     category: 'etc',
   }

@@ -1,0 +1,62 @@
+{
+  "HomePage": {
+    "name": "イム・ソクフン",
+    "alias": "[Maccrey]",
+    "title": "Fullstack Developer | n8n | Flutter",
+    "slogan": "世の中に存在しないサービスは私が作る。",
+    "viewProjects": "プロジェクト",
+    "readBlog": "ブログ"
+  },
+  "Header": {
+    "home": "ホーム",
+    "about": "私について",
+    "projects": "プロジェクト",
+    "blog": "ブログ",
+    "contact": "お問い合わせ"
+  },
+  "BlogPage": {
+    "title": "最新ブログ記事",
+    "noPosts": "ブログ記事を取得できませんでした。後でもう一度お試しください。",
+    "readMore": "続きを読む"
+  },
+  "ProjectsPage": {
+    "title": "プロジェクト",
+    "all": "すべて",
+    "github": "GitHub",
+    "demo": "デモ",
+    "studyduck": {
+      "description": "AI学習管理アプリ"
+    },
+    "autoflow": {
+      "description": "自動化ワークフローシステム（追加予定）"
+    },
+    "portfolio": {
+      "description": "個人開発者ポートフォリオサイト"
+    }
+  },
+  "AboutPage": {
+    "title": "私について",
+    "storyTitle": "私のストーリー",
+    "storyContent": "50歳で新しい挑戦を始めた遅咲きの開発者です。好奇心と作ることへの情熱だけで始め、今はフルスタック開発者として成長しています。Flutterでアプリを作り、PythonとN8Nで非効率を自動化し、Next.jsでウェブの可能性を探求しています。年齢は単なる数字に過ぎないことをコードで証明しています。",
+    "journeyTitle": "ビジネスから開発へ：特別な旅",
+    "journeyIntro": "20年以上ビジネスの現場で培った経験が、今の開発者キャリアを作りました。",
+    "experienceTitle": "主なキャリアハイライト",
+    "tradingExperience": "貿易・流通：グローバルビジネスの複雑性を理解し、効率的なプロセスを構築",
+    "retailExperience": "百貨店・免税店出店：リテール市場のトレンド分析と顧客体験設計",
+    "bankingExperience": "海外銀行業務：国際金融システムと規制環境に関する実務経験",
+    "cryptoExperience": "暗号資産ビジネス設計：ブロックチェーン技術とデジタル資産エコシステムの構築",
+    "transformationTitle": "50歳、開発者への転身",
+    "transformationContent": "ビジネスの現場で直面した非効率と限界を直接解決したいと思いました。Flutterから始まり、プログラミングの世界に入門し、今はPython、Next.js、N8Nなど様々な技術スタックで実際のサービスを開発しています。年齢が障壁ではなく、むしろ強みになり得ることを証明しています。",
+    "strengthsTitle": "ビジネス経験が生んだ開発者の強み",
+    "strengthBusiness": "ビジネス理解力：技術的実装を超えた実際のビジネス価値を創出するソリューション設計",
+    "strengthProblem": "問題解決能力：20年間の現場経験で鍛えられた実用的思考方式",
+    "strengthGlobal": "グローバル視点：国際貿易と金融経験を通じた多文化的視点",
+    "strengthPersistence": "粘り強さと情熱：50歳で新しい分野に挑戦する挑戦精神と学習意欲",
+    "philosophyTitle": "開発哲学",
+    "philosophyContent": "世の中に存在しないサービスは私が作る。ビジネス経験と技術力を組み合わせて、ユーザーに真の価値を届けるサービスを作ることが私の目標です。",
+    "commitmentTitle": "私の決意",
+    "commitmentContent": "何事も最善を尽くして最後まで完遂します。新しい技術を学ぶことを恐れず、失敗を成長の機会と捉えます。単にコードを書く開発者ではなく、ビジネス問題を解決し、新しい価値を創出する開発者になるために絶え間なく努力しています。",
+    "techStackTitle": "技術スタック",
+    "downloadResume": "履歴書ダウンロード"
+  }
+}
