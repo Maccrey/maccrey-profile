@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-// TODO: User needs to download Pretendard font and place it in the `public/fonts` directory.
-// You can download it from https://github.com/orioncactus/pretendard
 const pretendard = localFont({
   src: [
     {
@@ -41,7 +41,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${pretendard.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
