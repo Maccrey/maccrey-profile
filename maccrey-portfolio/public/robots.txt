@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://maccrey.com
+
+# Sitemaps
 Sitemap: https://maccrey.com/sitemap.xml

@@ -16,12 +16,12 @@ const inter = Inter({
 const pretendard = localFont({
   src: [
     {
-      path: "../../../public/fonts/Pretendard-Regular.woff2", // Adjusted path
+      path: "../../public/fonts/Pretendard-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Pretendard-Bold.woff2", // Adjusted path
+      path: "../../public/fonts/Pretendard-Bold.woff2",
       weight: "700",
       style: "normal",
     },
@@ -36,31 +36,34 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{locale: string}>;
 }) {
+  const {locale} = await params;
   const messages = await getMessages();
 
   return (
-    <body
-      className={`${inter.variable} ${pretendard.variable} antialiased`}
-    >
-      <NextIntlClientProvider locale={locale} messages={messages}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          <main className="pt-16">
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
-      </NextIntlClientProvider>
-    </body>
+    <html lang={locale} suppressHydrationWarning>
+      <body
+        className={`${inter.variable} ${pretendard.variable} antialiased`}
+      >
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <main className="pt-16">
+              {children}
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

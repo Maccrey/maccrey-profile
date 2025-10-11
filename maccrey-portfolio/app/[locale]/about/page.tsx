@@ -1,7 +1,7 @@
-import {getTranslator} from 'next-intl/server';
+import {getTranslations} from 'next-intl/server';
 
-export default async function AboutPage({params: {locale}}) {
-  const t = await getTranslator(locale, 'AboutPage');
+export default async function AboutPage() {
+  const t = await getTranslations('AboutPage');
   const techStack = ["Dart", "Python", "Firebase", "Supabase", "Cloudflare", "Next.js", "n8n", "Flutter"];
 
   return (
