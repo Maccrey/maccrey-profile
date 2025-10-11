@@ -17,7 +17,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="container mx-auto px-4 py-24 sm:py-32">
-      <h1 className="text-4xl font-bold text-center mb-12">Projects</h1>
+      <h1 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h1>
       <div className="flex justify-center flex-wrap gap-4 mb-8">
         {categories.map((category) => (
           <button
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
             className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
               selectedCategory === category
                 ? 'bg-blue-600 text-white'
-                : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
             }`}
           >
             {category}

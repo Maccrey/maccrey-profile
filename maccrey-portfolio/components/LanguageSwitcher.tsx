@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
       defaultValue={locale}
       onChange={onSelectChange}
       disabled={isPending}
-      className="bg-gray-800 text-white p-1 border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500"
+      className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white p-1 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500"
     >
       <option value="en">English</option>
       <option value="ko">한국어</option>
