@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from '@/routing';
 import { useTransition } from 'react';
 
 export default function LanguageSwitcher() {
@@ -12,10 +12,8 @@ export default function LanguageSwitcher() {
 
   const onSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
-    // Invalidate the cache and re-render the page with the new locale
     startTransition(() => {
-        const newPath = pathname.startsWith(`/${locale}`) ? pathname.substring(`/${locale}`.length) || '/' : pathname;
-        router.replace(`/${nextLocale}${newPath}`);
+      router.replace(pathname, { locale: nextLocale });
     });
   };
 

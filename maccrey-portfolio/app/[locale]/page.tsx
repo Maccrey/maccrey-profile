@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/routing';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
