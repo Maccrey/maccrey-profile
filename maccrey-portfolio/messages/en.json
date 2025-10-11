@@ -14,6 +14,17 @@
     "blog": "Blog",
     "contact": "Contact"
   },
+  "ContactPage": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out. You can find me on these platforms:",
+    "email": "Email",
+    "blog": "Blog",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "sendButton": "Send Message",
+    "sending": "Sending..."
+  },
   "BlogPage": {
     "title": "Latest Blog Posts",
     "noPosts": "Could not fetch blog posts. Please try again later.",

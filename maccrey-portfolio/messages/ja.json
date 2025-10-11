@@ -14,6 +14,17 @@
     "blog": "ブログ",
     "contact": "お問い合わせ"
   },
+  "ContactPage": {
+    "title": "お問い合わせ",
+    "description": "お気軽にご連絡ください。以下のプラットフォームで私を見つけることができます：",
+    "email": "メール",
+    "blog": "ブログ",
+    "nameLabel": "お名前",
+    "emailLabel": "メールアドレス",
+    "messageLabel": "メッセージ",
+    "sendButton": "メッセージを送信",
+    "sending": "送信中..."
+  },
   "BlogPage": {
     "title": "最新ブログ記事",
     "noPosts": "ブログ記事を取得できませんでした。後でもう一度お試しください。",
