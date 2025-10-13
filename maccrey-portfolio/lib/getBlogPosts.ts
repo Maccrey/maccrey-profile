@@ -8,8 +8,20 @@ export interface BlogPost {
   thumbnail?: string;
 }
 
-type CustomFeed = { [key: string]: any };
-type CustomItem = { [key: string]: any };
+type CustomFeed = {
+  items: CustomItem[];
+  [key: string]: unknown;
+};
+type CustomItem = {
+  title: string;
+  link: string;
+  pubDate: string;
+  isoDate?: string;
+  'content:encoded'?: string;
+  description?: string;
+  content?: string;
+  [key: string]: unknown;
+};
 
 const parser: Parser<CustomFeed, CustomItem> = new Parser({
   customFields: {
@@ -38,7 +50,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
       return [];
     }
 
-    const posts = feed.items.slice(0, 3).map((item: any) => {
+    const posts = feed.items.slice(0, 3).map((item: CustomItem) => {
       // Extract thumbnail from content:encoded or description
       const content = item['content:encoded'] || item.description || item.content || '';
       const thumbnailMatch = typeof content === 'string' ? content.match(/<img[^>]+src="([^">]+)"/) : null;
@@ -62,7 +74,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
             thumbnail = url;
             console.log(`Valid thumbnail URL: ${url}`);
           }
-        } catch (e) {
+        } catch {
           console.warn(`Invalid thumbnail URL: ${url}`);
         }
       }

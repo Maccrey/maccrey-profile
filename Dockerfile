@@ -28,6 +28,7 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/next.config.* ./
+COPY --from=builder /app/data ./data
 
 # Install production dependencies only
 RUN npm ci --only=production

@@ -33,7 +33,7 @@ export default function Home() {
           </Link>
           <Link
             href="/blog"
-            className="px-8 py-3 border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md text-lg font-medium transition-colors"
+            className="px-8 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md text-lg font-medium transition-colors"
           >
             {t('readBlog')}
           </Link>
