@@ -108,3 +108,20 @@ Cloudtype의 **"설정"** > **"환경 변수"**에서 애플리케이션에 필�
 ## 4. 배포
 
 설정을 완료한 후, **"배포"** 버튼을 클릭하여 배포를 시작합니다. Cloudtype이 Docker Hub에서 이미지를 가져와 실행합니다.
+
+## 5. Cloudtype UI 설정 예시
+
+다음은 Cloudtype UI에서 설정할 수 있는 항목들의 예시입니다.
+
+- **언어/프레임웍 선택**: Dockerfile
+- **애플리케이션 설정**:
+    - **Environment variables**:
+        - `PORT`: `3500`
+        - `NODE_ENV`: `production`
+    - **Build arguments (ARG)**:
+        - Name:
+        - Value:
+    - **Port**: `3500`
+    - **Dockerfile path**: `Dockerfile`
+    - **Health Check**: e.g., `/healthz`
+    - **Start commands**: `npm start`

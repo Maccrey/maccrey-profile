@@ -15,7 +15,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
       className="block group bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500"
     >
       {post.thumbnail && (
-        <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+        <div className="relative h-64 w-full bg-gray-200 dark:bg-gray-700">
           <Image
             src={post.thumbnail}
             alt={post.title}
