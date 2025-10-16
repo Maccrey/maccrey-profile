@@ -38,6 +38,9 @@
     "studyduck": {
       "description": "AI学習管理アプリ"
     },
+    "brailletyping": {
+      "description": "点字タイピング練習ウェブアプリケーション"
+    },
     "autoflow": {
       "description": "自動化ワークフローシステム（追加予定）"
     },

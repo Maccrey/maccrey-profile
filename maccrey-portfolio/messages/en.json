@@ -38,6 +38,9 @@
     "studyduck": {
       "description": "AI-based study management app"
     },
+    "brailletyping": {
+      "description": "Braille typing practice web application"
+    },
     "autoflow": {
       "description": "Automation workflow system (Coming soon)"
     },

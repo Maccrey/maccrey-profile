@@ -9,6 +9,13 @@ export const projects: Project[] = [
     category: 'Flutter',
   },
   {
+    name: 'Braille Typing Tutor',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    descriptionKey: 'brailletyping',
+    demoLink: 'https://typing.maccrey.com',
+    category: 'etc',
+  },
+  {
     name: 'AutoFlow',
     techStack: ['n8n', 'Python'],
     descriptionKey: 'autoflow',
