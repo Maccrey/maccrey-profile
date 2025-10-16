@@ -26,14 +26,17 @@ export default function BlogCard({ post }: { post: BlogPost }) {
           />
         </div>
       ) : (
-        <div className="h-64 w-full p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
-          <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed line-clamp-8 px-4">
+        <div className="h-64 w-full p-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 flex flex-col justify-center">
+          <h3 className="text-2xl font-bold mb-4 line-clamp-2 text-gray-900 dark:text-white">{post.title}</h3>
+          <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed line-clamp-6">
             {post.contentSnippet}
           </p>
         </div>
       )}
       <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 line-clamp-2 text-gray-900 dark:text-white">{post.title}</h3>
+        {post.thumbnail && (
+          <h3 className="text-xl font-bold mb-2 line-clamp-2 text-gray-900 dark:text-white">{post.title}</h3>
+        )}
         <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
           {new Date(post.pubDate).toLocaleDateString(locale === 'ko' ? 'ko-KR' : locale === 'ja' ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
