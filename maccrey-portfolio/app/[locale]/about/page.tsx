@@ -1,12 +1,62 @@
 import {getTranslations, getLocale} from 'next-intl/server';
 
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslator(locale, 'About');
+  const title = t('metaTitle');
+  const description = t('metaDescription');
+  // TODO: Replace 'https://your-domain.com' with your actual domain
+  const url = `https://your-domain.com/${locale}/about`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'Your Name - Portfolio', // TODO: Replace 'Your Name - Portfolio' with your actual name and portfolio title
+      images: [
+        {
+          url: 'https://your-domain.com/vercel.svg', // TODO: Replace with a more relevant image for your about page
+          width: 800,
+          height: 600,
+          alt: 'About Page'
+        }
+      ],
+      locale: locale,
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://your-domain.com/vercel.svg'] // TODO: Replace with a more relevant image for your about page
+    }
+  };
+}
+
 export default async function AboutPage() {
   const t = await getTranslations('AboutPage');
   const locale = await getLocale();
   const techStack = ["Dart", "Python", "Firebase", "Supabase", "Cloudflare", "Next.js", "n8n", "Flutter"];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "임석훈",
+    "jobTitle": "개발자",
+    "url": `https://your-domain.com/${locale}/about`, // TODO: Replace with your actual domain
+    "sameAs": [
+      "https://github.com/Maccrey"
+    ]
+  };
+
   return (
     <div className="container mx-auto px-4 py-24 sm:py-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <h1 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">{t('title')}</h1>
       <div className="max-w-4xl mx-auto space-y-16">
         {/* 나의 이야기 */}

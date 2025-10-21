@@ -115,13 +115,13 @@ Cloudtype의 **"설정"** > **"환경 변수"**에서 애플리케이션에 필�
 
 - **언어/프레임웍 선택**: Dockerfile
 - **애플리케이션 설정**:
-    - **Environment variables**:
-        - `PORT`: `3500`
-        - `NODE_ENV`: `production`
-    - **Build arguments (ARG)**:
-        - Name:
-        - Value:
-    - **Port**: `3500`
-    - **Dockerfile path**: `Dockerfile`
-    - **Health Check**: e.g., `/healthz`
-    - **Start commands**: `npm start`
+  - **Environment variables**:
+    - `PORT`: `3500`
+    - `NODE_ENV`: `production`
+  - **Build arguments (ARG)**:
+    - Name:
+    - Value:
+  - **Port**: `3500`
+  - **Dockerfile path**: `Dockerfile`
+  - **Health Check**: e.g., `/healthz`
+  - **Start commands**: `npm start`

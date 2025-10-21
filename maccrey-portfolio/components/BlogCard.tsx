@@ -35,12 +35,12 @@ export default function BlogCard({ post }: { post: BlogPost }) {
           </div>
         </>
       ) : (
-        <div className="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 flex flex-col min-h-full">
+        <div className="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 flex flex-col">
           <h3 className="text-2xl font-bold mb-3 line-clamp-2 text-gray-900 dark:text-white">{post.title}</h3>
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
             {new Date(post.pubDate).toLocaleDateString(locale === 'ko' ? 'ko-KR' : locale === 'ja' ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
-          <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed flex-grow">
+          <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed line-clamp-3">
             {post.contentSnippet}
           </p>
         </div>
