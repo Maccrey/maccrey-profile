@@ -8,9 +8,13 @@ const config: Config = {
   ],
   darkMode: "class", // Enable class-based dark mode
   theme: {
-    extend: {},
+    extend: {
+      lineClamp: {
+        8: '8',
+      }
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };
 
 export default config;

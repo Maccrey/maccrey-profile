@@ -38,7 +38,9 @@ export default function BlogCard({ post }: { post: BlogPost }) {
             { year: 'numeric', month: 'long', day: 'numeric' },
           )}
         </p>
-        <p className="text-gray-700 dark:text-gray-300 flex-grow">{post.contentSnippet}</p>
+        <p className={`text-gray-700 dark:text-gray-300 flex-grow ${post.thumbnail ? 'line-clamp-3' : 'line-clamp-8'}`}>
+          {post.contentSnippet}
+        </p>
       </div>
     </a>
   );
